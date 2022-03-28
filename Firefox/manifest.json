@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "LichessReQuote",
+  "version": "1.1",
+  "description": "This extension will replace the quotes under Lichess tournaments with less boring ones.",
+  "icons": {
+    "48": "res/icon-48.jpg",
+    "96": "res/icon-96.jpg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.lichess.org/*"
+      ],
+      "js": [
+        "main.js"
+      ]
+    }
+  ]
+}
